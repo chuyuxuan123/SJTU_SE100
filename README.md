@@ -11,3 +11,10 @@
 
 ## 2018/9/26
 继续昨天的教程项目。
+
+## 2018/9/28
+发现两个网站
+**中文react网站[中文react]https://react.docschina.org/**
+**react学习教程[w3cschool教程]https://www.w3cschool.cn/reactzwbwd/ldc11q.html**
+
+继续教程
