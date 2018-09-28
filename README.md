@@ -21,6 +21,7 @@
 
 继续教程
 <hr><hr/>
+
 ```javascript
   constructor(){
     super();
