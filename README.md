@@ -20,3 +20,13 @@
 **react学习教程[w3cschool教程](https://www.w3cschool.cn/reactzwbwd/ldc11q.html)**
 
 继续教程
+
+```javascript
+  constructor(){
+    super();
+    this.state = {
+      squares: Array(9).fill(null),
+    };
+  }
+```
+发现这种问题，看不懂这个类的构造函数，js的基础不太好  
