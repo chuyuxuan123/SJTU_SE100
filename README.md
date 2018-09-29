@@ -2,7 +2,7 @@
 ## 2018/9/25
 我在React的官网上看到了这篇说明类的文档，一开始我是在网站上直接做的，之后又尝试用本地环境，还没有全部完成。
 
-**参考网站[react](https://reactjs.org/tutorial)**
+**[react官方文档](https://reactjs.org/tutorial)**
 
 突然发现自己并不会JavaScript的一些知识，需要继续学习。
 
@@ -15,9 +15,9 @@
 ## 2018/9/28
 新发现两个网站
 
-**中文react网站[中文react](https://react.docschina.org/)**
+**[中文react文档](https://react.docschina.org/)**
 
-**react学习教程[w3cschool教程](https://www.w3cschool.cn/reactzwbwd/ldc11q.html)**
+**[w3cschool教程](https://www.w3cschool.cn/reactzwbwd/ldc11q.html)**
 
 继续教程
 <hr>
