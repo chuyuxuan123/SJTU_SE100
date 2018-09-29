@@ -2,13 +2,13 @@
 
 <hr>
 
-下面的教程是react官网上一篇教程，在本地运行需要配置一下环境，下面是网站上说明配置环境的步骤
+下面的教程是react官网上一篇教程，在本地运行需要配置一下环境，以下是网站上说明配置环境的步骤
 
 1. 确保你电脑上安装了最新版本的 [Node.js](https://nodejs.org/zh-cn/).
 2. 跟着 [安装指南](/docs/installation.html#creating-a-new-application) 创建一个新的 React 项目。
 3. 删除掉生成项目中 `src/` 文件夹下的所有文件。
-4. 在 `src/` 文件夹下新建一个名为 `index.css` 的文件并拷贝 [这里的 CSS 代码](https://codepen.io/gaearon/pen/oWWQNa?editors=0100) 到文件中。
-5. 在 `src/` 文件夹下新建一个名为 `index.js` 的文件并拷贝 [这里的 JS 代码](https://codepen.io/gaearon/pen/oWWQNa?editors=0010) 到文件中, 并在此文件的最开头加上下面几行代码：
+4. 在 `src/` 文件夹下新建一个名为 `index.css` 的文件并拷贝 `/index.css` 到文件中。
+5. 在 `src/` 文件夹下新建一个名为 `index.js` 的文件并拷贝 `/index.js` 到文件中, 并在此文件的最开头加上下面几行代码：
 
     ```js
     import React from 'react';
