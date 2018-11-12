@@ -74,6 +74,6 @@
 
 晚上读了react官网上Doc部分，看的似懂非懂，也看了有关props与state相关的知识，我觉得应该先看一下Doc然后再去做tutorial。不过先按照tutorial做了之后虽然有很多很多不明白的地方，但是看到文档的时候就会有印象，会加深一点理解。对于前几天不懂的地方，文档中都有描述，就是现在理解的还是不够深刻。
 
-hello world
-
-test 2
+# See also
+* bootstrap
+* less
