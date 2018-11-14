@@ -1,5 +1,5 @@
 # 软件工程创新实践 第三次作业
-本项目对React应用的一个具体实例，由于最近在看bootstrap所以就在别人的博客上找了一篇文章，[文章地址](https://segmentfault.com/a/1190000010383464)
+本项目对React应用的一个具体实例，由于最近在看bootstrap所以就在别人的博客上找了一篇文章，文章内容是结合React与Bootstrap共同开发前端[文章地址](https://segmentfault.com/a/1190000010383464)
 只参考了其中的的代码部分。
 ## 搭建环境
 ### React
