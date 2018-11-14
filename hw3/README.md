@@ -10,8 +10,11 @@
 这里hw3就是本次的目录，等待一段时间，npm会自动下载所依赖的包，下载完成后会有提示。
 
 输入`cd hw3`进入文件夹，输入`npm start`启动本地服务器，之后等待片刻，就会出现React的欢迎页面。如果浏览器没有自动打开，在浏览器网址栏输入localhost:3000，也能打开网页。这里react环境就搭好了。
+
+有关create-react-app：这是一个搭建react应用的脚手架，可以免去一些配置工作，专注与开发。
+有关这一脚手架的工作原理，我在网上找了别人的一篇博客[create-react-app原理](https://www.cnblogs.com/axl234/p/8269018.html),里面有很多内容没有看懂，放在这里记录一下。
 ### Bootstrap
-Bootstrap部分，通过查询官网资料，我直接使用 BootCDN 提供的免费 CDN 加速服务（同时支持 http 和 https 协议）
+Bootstrap部分，通过查询官网资料，直接使用 BootCDN 提供的免费 CDN 加速服务（同时支持 http 和 https 协议）
 
 ```
 <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
