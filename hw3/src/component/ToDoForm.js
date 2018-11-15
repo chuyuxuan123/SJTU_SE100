@@ -1,7 +1,7 @@
 import React from 'react';
 
 class ToDoForm extends React.Component {
-    tijiao(event) {
+    toDoSubmit(event) {
         event.preventDefault();
     }
     add(event) {
@@ -17,7 +17,7 @@ class ToDoForm extends React.Component {
     }
     render() {
         return (
-            <form className="form-horizontal" onSubmit={this.tijiao.bind(this)}>
+            <form className="form-horizontal" onSubmit={this.toDoSubmit.bind(this)}>
                 <div className="form-group">
                     <div className="col-sm-10">
                         <input ref="txt" type="text" className="form-control" onKeyUp={this.add.bind(this)} id="exampleInputName2" placeholder="请输入内容" />

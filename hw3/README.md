@@ -32,4 +32,8 @@ Bootstrap部分，通过查询官网资料，直接使用 BootCDN 提供的免�
 ## Let's strat!
 其实在做第一次作业时，我就使用了create-react-app，但是当时git也不会使用，对react的了解也比较少，可以说是一窍不通。跟着react官网上的教程做了一个井字棋的程序。
 这次作业新建项目后，我发现目录下有自动生成的`.gitignore`文件，忽略掉`/node_modules`里面的文件。
+<<<<<<< Updated upstream
 在原来的`/src`目录下，新建一个 `/component`目录，保存写的组件。然后在原`/src`文件夹下，只保留`index.js`,`index.css`和`serviceWorker.js`三个文件。我们把我们写的文件都放到`/component`目录下。
+=======
+在原来的`/src`目录下，新建一个`/component`目录，保存写的组件。然后在原`/src`文件夹下，只保留`index.js`,`index.css`和`serviceWorker.js`三个文件。我们把我们写的文件都放到`/component`目录下。
+>>>>>>> Stashed changes
