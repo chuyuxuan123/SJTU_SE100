@@ -30,10 +30,19 @@ Bootstrap部分，通过查询官网资料，直接使用 BootCDN 提供的免�
 
 我又尝试另外一种搭建bootstrap的方式；cd到所在目录中，运行`npm install bootstrap@3`等待安装完毕后，在`/public/index.html`文件中修改外部引用的css文件,运行后样式并没有加载出来，这里就是用cdn加速的连接就可以。
 
-还有一种方法，在/index.js文件中直接导入css文件，在文件的开头加上`import '../node_modules/bootstrap/dist/css/bootstrap.css'`运行后就有样式加载出来了
+还有一种方法，在/index.js文件中直接导入css文件，在文件的开头加上`import '../node_modules/bootstrap/dist/css/bootstrap.css'`运行后就有样式加载出来了。
 
 到这，react与bootstrap的开发环境就搭好了。
-## Let's strat!
+## Let's start!
 其实在做第一次作业时，我就使用了create-react-app，但是当时git也不会使用，对react的了解也比较少，可以说是一窍不通。跟着react官网上的教程做了一个井字棋的程序。
 这次作业新建项目后，我发现目录下有自动生成的`.gitignore`文件，忽略掉`/node_modules`里面的文件。
 在原来的`/src`目录下，新建一个`/component`目录，保存写的组件。然后在原`/src`文件夹下，只保留`index.js`,`index.css`和`serviceWorker.js`三个文件。我们把我们写的文件都放到`/component`目录下。
+
+react使用的是组件式开发，这里我们用到了一个ToDoapp组件，它包含两个组件ToDoForm和ToDoList，ToDoForm主要是产生输入的项目信息，ToDoList生成表格，其中的每一项是另一个组件ToDoItem。
+
+代码的重点是利用props在父子组件中传值。
+
+在终端输入`npm start`，就会打开一个浏览器窗口，npm会在localhost:3000上建立一个服务器，上面是编译好的网页。
+也可以输入`npm run build`编译代码，得到一个`/bulid`文件夹，里面是编译好的文件。不过如果想要运行那个生成的页面的话，必须把`/build`文件放到服务器上，这里我也没太搞清楚是怎么回事，暂且搁置。
+
+## 测试部分

@@ -17,11 +17,11 @@ class ToDoItem extends React.Component {
                 <td>{time}</td>
                 <td>{done === 0 ? "未完成" : "完成"}</td>
                 <td>
-                    <a className="btn btn-primary" onClick={this.delete.bind(this)}>删除</a>
-                    <a className="btn btn-success" onClick={this.complete.bind(this)}>
+                    <button className="btn btn-primary" onClick={this.delete.bind(this)}>删除</button>
+                    <button className="btn btn-success" onClick={this.complete.bind(this)}>
                         <span className="glyphicon glyphicon-ok" aria-hidden="true"></span>
                         完成
-                   </a>
+                   </button>
                 </td>
             </tr>
         );

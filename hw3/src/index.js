@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import '../node_modules/bootstrap/dist/css/bootstrap.css';//引入bootstrap的样式
+//import '../node_modules/bootstrap/dist/css/bootstrap.css';由于在index.html中使用引入bootstrap的样式
+//这里不再引用
 import ToDoapp from './component/ToDoapp';
 import * as serviceWorker from './serviceWorker';
 
