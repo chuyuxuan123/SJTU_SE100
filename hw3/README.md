@@ -46,3 +46,19 @@ react使用的是组件式开发，这里我们用到了一个ToDoapp组件，�
 也可以输入`npm run build`编译代码，得到一个`/bulid`文件夹，里面是编译好的文件。不过如果想要运行那个生成的页面的话，必须把`/build`文件放到服务器上，这里我也没太搞清楚是怎么回事，暂且搁置。
 
 ## 测试部分
+
+**emmmmm下面的一些博客因为时间比较早，特别是阮一峰老师的博客，按照博客的说明并不能实现单元测试。我在自己尝试的时候还把依赖项搞崩了，又回退到之前的版本**
+
+**以后的测试新建分支**
+
+[阮一峰老师的博客react测试入门](http://www.ruanyifeng.com/blog/2016/02/react-testing-tutorial.html)<br/>
+[阮一峰老师的博客Mocha](http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html)<br/>
+[jsdom](https://github.com/jsdom/jsdom)<br/>
+[mocha](https://mochajs.org/)<br/>
+使用mocha测试框架`npm install mocha`
+emmmmm，这里阮一峰老师的博客好像创造时间挺早的，按照上面博客中的步骤来会有很多问题，可能与环境搭建的不同也有关系，这里想用mocha失败了，具体原因没有找到。用到的一些[babel](https://babeljs.io/docs/en/)这种编译器来把es6代码转换成es5代码（mocha只支持es5），这里遇到的问题是写babel的配置文件不知道怎么写。先把这一方式放这。
+发现再package.json文件中可以写scripts的选项
+
+在react的官网上，它推荐的是[Jest](https://jestjs.io/docs/en/getting-started)的测试框架，还有[Enzyme](https://airbnb.io/enzyme/)的测试框架
+[Enzyme博客](https://www.cnblogs.com/vvjiang/p/8599980.html)<br/>
+[Jest+Enzyme](https://medium.com/codeclan/testing-react-with-jest-and-enzyme-20505fec4675)<br/>
