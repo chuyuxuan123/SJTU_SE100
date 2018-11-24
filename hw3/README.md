@@ -62,3 +62,13 @@ emmmmm，这里阮一峰老师的博客好像创造时间挺早的，按照上�
 在react的官网上，它推荐的是[Jest](https://jestjs.io/docs/en/getting-started)的测试框架，还有[Enzyme](https://airbnb.io/enzyme/)的测试框架
 [Enzyme博客](https://www.cnblogs.com/vvjiang/p/8599980.html)<br/>
 [Jest+Enzyme](https://medium.com/codeclan/testing-react-with-jest-and-enzyme-20505fec4675)<br/>
+
+### 在测试这部分之前的不要看，终于找到了靠谱的资料
+总结下来就是使用Enzyme+Mocha，由于Mocha不支持ES6，所以环境比较难配
+先用babel将ES6转换为ES5，还需要安装jsdom等依赖项
+参考资料：<br/>
+[Enzyme](https://airbnb.io/enzyme/)<br/>
+[mocha](https://mochajs.org/)<br/>
+[jsdom](https://github.com/jsdom/jsdom)<br/>
+[Enzyme+react](https://medium.com/codeclan/testing-react-with-jest-and-enzyme-20505fec4675)<br/>
+[Enzyme2](https://medium.com/@houstoncbreedlove/basics-intro-to-testing-react-components-with-mocha-chai-enzyme-and-sinon-c8b82ce58df8)<br/>
