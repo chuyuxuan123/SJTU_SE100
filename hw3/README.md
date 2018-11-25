@@ -49,7 +49,7 @@ react使用的是组件式开发，这里我们用到了一个ToDoapp组件，�
 
 **emmmmm下面的一些博客因为时间比较早，特别是阮一峰老师的博客，按照博客的说明并不能实现单元测试。我在自己尝试的时候还把依赖项搞崩了，又回退到之前的版本**
 
-**以后的测试新建分支**
+**以后的测试一定新建分支**
 
 [阮一峰老师的博客react测试入门](http://www.ruanyifeng.com/blog/2016/02/react-testing-tutorial.html)<br/>
 [阮一峰老师的博客Mocha](http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html)<br/>
@@ -66,9 +66,48 @@ emmmmm，这里阮一峰老师的博客好像创造时间挺早的，按照上�
 ### 在测试这部分之前的不要看，终于找到了靠谱的资料
 总结下来就是使用Enzyme+Mocha，由于Mocha不支持ES6，所以环境比较难配
 先用babel将ES6转换为ES5，还需要安装jsdom等依赖项
+
+下面是配环境时参考的博客，也是混合了几个文章的内容，其实实现原理我也没有搞清楚，也不能只按照一篇文章的来。
+
 参考资料：<br/>
 [Enzyme](https://airbnb.io/enzyme/)<br/>
 [mocha](https://mochajs.org/)<br/>
 [jsdom](https://github.com/jsdom/jsdom)<br/>
-[Enzyme+react](https://medium.com/codeclan/testing-react-with-jest-and-enzyme-20505fec4675)<br/>
+[Enzyme1](https://medium.com/codeclan/testing-react-with-jest-and-enzyme-20505fec4675)<br/>
 [Enzyme2](https://medium.com/@houstoncbreedlove/basics-intro-to-testing-react-components-with-mocha-chai-enzyme-and-sinon-c8b82ce58df8)<br/>
+[Enzyme3](https://medium.com/@kayodeniyi/setting-up-tests-for-react-using-mocha-expect-and-enzyme-8f53af96fe7e)<br/>
+
+测试环境需要安装其他的一些包
+```
+npm i --save-dev babel-cli babel-loader babel-preset-es2015 babel-preset-react
+npm i --save-dev enzyme enzyme-adapter-react-16
+npm i --save-dev jsdom@9.11.0 mocha expect react-addons-test-utils
+```
+第一行是babel相关的工具，主要是将ES6转化为ES5
+
+第二行是Enzyme框架
+
+第三行是其他的一些依赖项，比如Mocha框架，expect断言库，react官方单元测试工具，jsdom可以建立虚拟的DOM环境让测试使用，其实这些教程也不算很新，其中jsdom的版本有较大的更新，**一定要安装9.11.0版本或以下的jsdom**
+
+还需要在项目内新建一个`.babelrc`配置文件
+```
+//.babelrc
+{ 
+    "presets": ["react", "es2015"] 
+}
+```
+
+以及修改`package.json`文件
+
+```
+scripts{
+    ...
+    "test": "mocha --reporter spec \"./src/test/testSetup.js\" \"./src/test/*.test.js\"",
+    ...
+}
+```
+在src下面新建一个`/test`目录，里面是测试文件
+首先在里面建一个文件名为`testSetup.js`文件，在测试开始时会首先读取这个文件中的内容，这个文件是用jsdom创造一个DOM环境，具体内容见文件
+
+这样在运行`npm test`时，会自动读取后缀为`*.test.js`的文件，最后返回测试结果
+###测试文件

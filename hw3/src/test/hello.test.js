@@ -1,8 +1,10 @@
-import React from 'react'
-import expect from 'expect'
-import { shallow, configure } from 'enzyme'
+import React from 'react';
+import expect from 'expect';
+import { shallow, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import HelloWorld from '../component/HelloWorld'
+
+import HelloWorld from '../component/HelloWorld';
+
 configure({ adapter: new Adapter() });
 const wrapper = shallow(<HelloWorld />);
 describe('HelloWorld Component', () => {
