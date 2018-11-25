@@ -17,6 +17,9 @@ describe("test a react app", () => {
     it("todoapp state test", () => {
         const testCom = mount(<ToDoapp />);
         expect(testCom.state['todos']).toEqual(undefined);
+        testCom.simulate('change', { target: { value: "helloworld" } });
+        testCom.find('.form-horizontal .form-group .col-sm-2 .btn-primary').simulate("click");
+        expect(testCom.state['todos']).toEqual(undefined);
         testCom.unmount();
     });
 });
