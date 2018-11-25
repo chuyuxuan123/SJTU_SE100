@@ -16,7 +16,7 @@
 ### Bootstrap
 Bootstrap部分，通过查询官网资料，直接使用 BootCDN 提供的免费 CDN 加速服务（同时支持 http 和 https 协议）
 
-```js
+```html
 <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
